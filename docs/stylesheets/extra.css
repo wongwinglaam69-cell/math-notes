@@ -1,0 +1,28 @@
+/* Better math rendering */
+mjx-container[jax="CHTML"][display="true"] {
+  margin: 1.2em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Theorem-like boxes */
+.theorem, .definition, .lemma, .proof {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 0.6em 1em;
+  margin: 1em 0;
+  background: var(--md-code-bg-color);
+  border-radius: 4px;
+}
+
+.theorem::before { content: "Theorem. "; font-weight: bold; font-style: italic; }
+.definition::before { content: "Definition. "; font-weight: bold; font-style: italic; }
+.lemma::before { content: "Lemma. "; font-weight: bold; font-style: italic; }
+.proof::before { content: "Proof. "; font-weight: bold; font-style: italic; }
+
+.proof { border-left-color: var(--md-default-fg-color--light); }
+
+/* Tag styling */
+.md-tag {
+  border-radius: 4px;
+  font-size: 0.75em;
+}
