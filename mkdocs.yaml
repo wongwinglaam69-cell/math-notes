@@ -1,10 +1,10 @@
 site_name: My Mathematics Notes
 site_description: Personal notes in mathematics
-site_author: Your Name
-site_url: https://yourusername.github.io/math-notes/
+site_author: Winter Wong
+site_url: https://wongwinglaam69-cell.github.io/math-notes/
 
-repo_name: yourusername/math-notes
-repo_url: https://github.com/yourusername/math-notes
+repo_name: wongwinglaam69-cell/math-notes
+repo_url: https://github.com/wongwinglaam69-cell/math-notes
 
 theme:
   name: material
