@@ -518,6 +518,8 @@
       
         
       
+        
+      
     
     
     
@@ -573,6 +575,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -873,10 +903,35 @@ inscribed triangle, the sector, and the outer triangle gives</p>
 <p>By the squeeze theorem and <span class="arithmatex">\(\cos x \to 1\)</span> as <span class="arithmatex">\(x \to 0\)</span>, the result follows.</p>
 </div>
 <h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Prove that <span class="arithmatex">\(\lim_{x \to 2} (3x + 1) = 7\)</span> from the definition.</li>
-<li>Show that <span class="arithmatex">\(\lim_{x \to 0} x^2 \sin(1/x) = 0\)</span>.</li>
-</ol>
+<p><strong>Exercise 1.</strong> Prove that <span class="arithmatex">\(\lim_{x \to 2} (3x + 1) = 7\)</span> from the
+<span class="arithmatex">\(\varepsilon\)</span>-<span class="arithmatex">\(\delta\)</span> definition.</p>
+<details class="note">
+<summary>Solution</summary>
+<p>We need: for every <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, find <span class="arithmatex">\(\delta &gt; 0\)</span> such that
+<span class="arithmatex">\(0 &lt; |x - 2| &lt; \delta \implies |(3x + 1) - 7| &lt; \varepsilon\)</span>.</p>
+<p>Simplify the target:
+$$
+|(3x + 1) - 7| = |3x - 6| = 3|x - 2|.
+$$</p>
+<p>So we need <span class="arithmatex">\(3|x - 2| &lt; \varepsilon\)</span>, i.e. <span class="arithmatex">\(|x - 2| &lt; \varepsilon/3\)</span>.</p>
+<p>Choose <span class="arithmatex">\(\delta = \varepsilon / 3\)</span>. Then <span class="arithmatex">\(0 &lt; |x - 2| &lt; \delta\)</span>
+implies
+$$
+|(3x+1) - 7| = 3|x - 2| &lt; 3\delta = \varepsilon. \quad \blacksquare
+$$</p>
+</details>
+<hr />
+<p><strong>Exercise 2.</strong> Show that <span class="arithmatex">\(\lim_{x \to 0} x^2 \sin(1/x) = 0\)</span>.</p>
+<details class="note">
+<summary>Solution</summary>
+<p>Since <span class="arithmatex">\(|\sin(1/x)| \leq 1\)</span> for all <span class="arithmatex">\(x \neq 0\)</span>:
+$$
+|x^2 \sin(1/x)| \leq |x|^2.
+$$</p>
+<p>Given <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, choose <span class="arithmatex">\(\delta = \sqrt{\varepsilon}\)</span>. Then
+<span class="arithmatex">\(0 &lt; |x| &lt; \delta\)</span> implies <span class="arithmatex">\(|x|^2 &lt; \delta^2 = \varepsilon\)</span>, so
+<span class="arithmatex">\(|x^2 \sin(1/x)| &lt; \varepsilon\)</span>. <span class="arithmatex">\(\blacksquare\)</span></p>
+</details>
 
 
 
