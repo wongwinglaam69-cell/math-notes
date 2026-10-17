@@ -92,6 +92,7 @@ nav:
       - Ring Theory: algebra/rings.md
   - Analysis:
       - analysis/index.md
+      - Chapter 3: analysis/chapter3.md
       - Limits: analysis/limits.md
       - Integration: analysis/integration.md
 

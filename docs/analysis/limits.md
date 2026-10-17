@@ -56,5 +56,36 @@ By the squeeze theorem and $\cos x \to 1$ as $x \to 0$, the result follows.
 
 ## Exercises
 
-1. Prove that $\lim_{x \to 2} (3x + 1) = 7$ from the definition.
-2. Show that $\lim_{x \to 0} x^2 \sin(1/x) = 0$.
+**Exercise 1.** Prove that $\lim_{x \to 2} (3x + 1) = 7$ from the
+$\varepsilon$-$\delta$ definition.
+
+??? note "Solution"
+    We need: for every $\varepsilon > 0$, find $\delta > 0$ such that
+    $0 < |x - 2| < \delta \implies |(3x + 1) - 7| < \varepsilon$.
+
+    Simplify the target:
+    $$
+    |(3x + 1) - 7| = |3x - 6| = 3|x - 2|.
+    $$
+
+    So we need $3|x - 2| < \varepsilon$, i.e. $|x - 2| < \varepsilon/3$.
+
+    Choose $\delta = \varepsilon / 3$. Then $0 < |x - 2| < \delta$
+    implies
+    $$
+    |(3x+1) - 7| = 3|x - 2| < 3\delta = \varepsilon. \quad \blacksquare
+    $$
+
+---
+
+**Exercise 2.** Show that $\lim_{x \to 0} x^2 \sin(1/x) = 0$.
+
+??? note "Solution"
+    Since $|\sin(1/x)| \leq 1$ for all $x \neq 0$:
+    $$
+    |x^2 \sin(1/x)| \leq |x|^2.
+    $$
+
+    Given $\varepsilon > 0$, choose $\delta = \sqrt{\varepsilon}$. Then
+    $0 < |x| < \delta$ implies $|x|^2 < \delta^2 = \varepsilon$, so
+    $|x^2 \sin(1/x)| < \varepsilon$. $\blacksquare$

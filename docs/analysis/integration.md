@@ -2,10 +2,10 @@
 title: Integration
 tags:
   - analysis
-  - integration
+  - Integration
 ---
 
-# Integration
+# Chapter 3
 
 ## 1. The Riemann Integral
 
