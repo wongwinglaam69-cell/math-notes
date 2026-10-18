@@ -10,6 +10,7 @@ Notes on real analysis and calculus.
 
 ## Contents
 
+- [Chapter 3](chapter3.md) - sequences and series
 - [Limits](limits.md) — $\varepsilon$-$\delta$ definitions and properties.
 - [Integration](integration.md) — Riemann integrals, FTC, and techniques.
 
