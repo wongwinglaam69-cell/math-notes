@@ -87,7 +87,8 @@ This is well-defined again by the principle of induction.
     \end{aligned}
     $$
 
-**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. ??? note "Solution" 
+**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. 
+??? note "Solution" 
 
     First we show addition is commutative.
 
