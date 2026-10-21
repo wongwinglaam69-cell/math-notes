@@ -25,12 +25,12 @@ tags:
 ## 2. Defining arithmetic operations: $+$ and $\cdot$
 <div class="definition" markdown>
 First, we define $+$:
-$$
+$
 \begin{cases}
   a+0=a\\
   a+S(b)=S(a+b)
 \end{cases}
-$$
+$
 and likewise with the order reversed.
 </div>
 
@@ -45,14 +45,15 @@ and likewise with the order reversed.
     Assume $P(x)$ is true, i.e. $0+x=x$,
 
     consider $P(S(x))$,
-    $$
+
+    $
     \begin{equation*}
     \begin{split}
     0+S(x)&=S(0+x)\text{\hspace{2cm}(by definition)}\\
     &=S(x)\text{\hspace{2cm}(by induction assumption)}
     \end{split}
     \end{equation*}
-    $$
+    $
 
     Therefore $P$ is also true of $S(x)$.
 
