@@ -1012,10 +1012,10 @@
 <div class="definition">
 <p>We say the triple data of <span class="arithmatex">\((N, 0, S)\)</span> or just <span class="arithmatex">\(N\)</span> for short is a <u>model of the natural numbers</u> if:</p>
 <ol>
-<li>If <span class="arithmatex">\(S(x)=S(y)\)</span> for <span class="arithmatex">\(x,y\in N\)</span>, then <span class="arithmatex">\(x=y\)</span> (<span class="arithmatex">\(S\)</span> is injective).</li>
-<li>For all <span class="arithmatex">\(x \in N\)</span>, <span class="arithmatex">\(S(x)\neq x\)</span> .</li>
-<li>There is no <span class="arithmatex">\(x\in N\)</span> such that <span class="arithmatex">\(S(x)=0\)</span>.</li>
-<li><i>(Principle of Induction)</i> Suppose a predicate <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(0\)</span>, and that whatever <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(x\)</span>, it is also true of <span class="arithmatex">\(S(x)\)</span>. Then <span class="arithmatex">\(P\)</span> is true for all <span class="arithmatex">\(x\in N\)</span>.</li>
+<li>If <span class="arithmatex">\(S(x)=S(y)\)</span> for <span class="arithmatex">\(x,y\in \mathbb{N}\)</span>, then <span class="arithmatex">\(x=y\)</span> (<span class="arithmatex">\(S\)</span> is injective).</li>
+<li>For all <span class="arithmatex">\(x \in \mathbb{N}\)</span>, <span class="arithmatex">\(S(x)\neq x\)</span> .</li>
+<li>There is no <span class="arithmatex">\(x\in \mathbb{N}\)</span> such that <span class="arithmatex">\(S(x)=0\)</span>.</li>
+<li><i>(Principle of Induction)</i> Suppose a predicate <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(0\)</span>, and that whatever <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(x\)</span>, it is also true of <span class="arithmatex">\(S(x)\)</span>. Then <span class="arithmatex">\(P\)</span> is true for all <span class="arithmatex">\(x\in \mathbb{N}\)</span>.</li>
 </ol>
 </div>
 <p><strong>Exercise 3.1.1</strong> Show that the set <span class="arithmatex">\(\{0,1,2\}\)</span> with <span class="arithmatex">\(S(0)=1, S(1)=2, S(2)=0\)</span> <u>does not </u> satisfy all Peano axioms. Which axioms fail?</p>
@@ -1025,7 +1025,7 @@
 </details>
 <h2 id="2-defining-arithmetic-operations-and-cdot">2. Defining arithmetic operations: <span class="arithmatex">\(+\)</span> and <span class="arithmatex">\(\cdot\)</span><a class="headerlink" href="#2-defining-arithmetic-operations-and-cdot" title="Permanent link">&para;</a></h2>
 <div class="definition">
-<p>First, we define <span class="arithmatex">\(+\)</span>:</p>
+<p>First, we define <span class="arithmatex">\(+\)</span> : </p>
 <div class="arithmatex">\[
 \begin{cases}
   a+0=a\\
@@ -1034,7 +1034,7 @@
 \]</div>
 <p>and likewise with the order reversed.</p>
 </div>
-<p><strong>Exercise 3.2.1</strong> Show that for all <span class="arithmatex">\(n\in N\)</span>, <span class="arithmatex">\(0+n=n\)</span>.</p>
+<p><strong>Exercise 3.2.1</strong> Show that for all <span class="arithmatex">\(n\in \mathbb{N}\)</span>, <span class="arithmatex">\(0+n=n\)</span>.</p>
 <details class="note">
 <summary>Solution</summary>
 <p>We shall prove this by induction.</p>
@@ -1049,7 +1049,7 @@
 \end{aligned}
 \]</div>
 <p>Therefore <span class="arithmatex">\(P\)</span> is also true of <span class="arithmatex">\(S(x)\)</span>.</p>
-<p>By the principle of induction, <span class="arithmatex">\(P\)</span> is true of all <span class="arithmatex">\(n\in N\)</span>.</p>
+<p>By the principle of induction, <span class="arithmatex">\(P\)</span> is true of all <span class="arithmatex">\(n\in \mathbb{N}\)</span>.</p>
 </details>
 
 
