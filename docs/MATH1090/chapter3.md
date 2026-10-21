@@ -1,5 +1,5 @@
 ---
-title: The integers
+title: Chapter 3 The integers
 tags:
   - MATH1090 Introduction to Set Theory
   - The integers
@@ -16,55 +16,42 @@ tags:
 2. For all $x \in N$, $S(x)\neq x$ .
 3. There is no $x\in N$ such that $S(x)=0.
 4. <i>(Principle of Induction)</i> Suppose a predicate $P$ is true of $0$, and that whatever $P$ is true of $x$, it is also true of $S(x)$. Then $P$ is true for all $x\in N$.
+</div>
 
 **Exercise 3.1.1** Show that the set $\{0,1,2\}$ with $S(0)=1, S(1)=2, S(2)=0$ <u>does not </u> satisfy all Peano axioms. Which axioms fail?
 ??? note "Solution"
     The third axiom failed, there shouldn't be any $S(x)=0$ but now we have $S(2)=0$, contradiction.
-    
 
-
-Upper and lower sums:
-
+## 2. Defining arithmetic operations: $+$ and $\cdot$
+<div class="definition" markdown>
+First, we define $+$:
 $$
-U(f, P) = \sum_{i=1}^n M_i \Delta x_i, \qquad
-L(f, P) = \sum_{i=1}^n m_i \Delta x_i
+\begin{case}
+  a+0=a\\
+  a+S(b)=S(a+b)
+\end{cases}
 $$
-
-where $M_i = \sup_{[x_{i-1}, x_i]} f$ and $m_i = \inf_{[x_{i-1}, x_i]} f$.
-
-$f$ is **Riemann integrable** if $\sup_P L(f, P) = \inf_P U(f, P)$; call
-this common value $\int_a^b f$.
-
-## 2. Fundamental Theorem of Calculus
-
-<div class="theorem" markdown>
-**FTC, Part I.** If $f$ is continuous on $[a,b]$ and
-$F(x) = \int_a^x f(t)\, dt$, then $F$ is differentiable on $(a,b)$ and
-
-$$
-F'(x) = f(x).
-$$
+and likewise with the order reversed.
 </div>
 
-<div class="theorem" markdown>
-**FTC, Part II.** If $f$ is integrable and $F$ is any antiderivative
-of $f$, then
+**Exercise 3.2.1** Show that for all $n\in N$, $0+n=n$.
+??? note "Solution"
+    We shall prove this by induction.
+    Let $P(n)$ be the predicate $0+n=n$.
+    By defintion we have $a+0=a$, substitute $a=0$ we get $0+0=0$, hence $P(0)$ is true.
+    Assume $P(x)$ is true, i.e. $0+x=x$,
+    consider $P(S(x))$,
+    $$
+    \begin{equation*}
+    \begin{split}
+    0+S(x)&=S(0+x)\text{\hspace{2cm}(by definition)}\\
+    &=S(x)\text{\hspace{2cm}(by induction assumption)}
+    \end{split}
+    \end{equation*}
+    $$
+    Therefore $P$ is also true of $S(x)$.
+    By the principle of induction, $P$ is true of all $n\in N$.
 
-$$
-\int_a^b f(x)\, dx = F(b) - F(a).
-$$
-</div>
 
-## 3. Techniques
 
-| Technique | When to use |
-|-----------|-------------|
-| Substitution | Composite integrands |
-| Integration by parts | Products, $\int u \, dv = uv - \int v \, du$ |
-| Partial fractions | Rational functions |
-| Trigonometric substitution | $\sqrt{a^2 - x^2}$, etc. |
 
-## Exercises
-
-1. Compute $\int_0^1 x^2 \, dx$ directly from the definition.
-2. Evaluate $\int_0^{\pi/2} \sin^2 x \, dx$ using $\sin^2 x = \frac{1 - \cos 2x}{2}$.
