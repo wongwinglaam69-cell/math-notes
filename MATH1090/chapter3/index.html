@@ -1143,7 +1143,7 @@ We shall do this by induction.</p>
 <p><strong>Lemma 2.</strong> <span class="arithmatex">\(S(a)\cdot b=(a\cdot b)+b\)</span>.</p>
 <p><div class="proof" markdown>
 We prove this by induction on <span class="arithmatex">\(b\)</span>.</p>
-<p>When <span class="arithmatex">\(b=0\)</span>, <span class="arithmatex">\(a\cdot0+0=0=S(a)\cdot 0\)</span>.</p>
+<p>When <span class="arithmatex">\(b=0\)</span>, <span class="arithmatex">\((a\cdot0)+0=0+0=0=S(a)\cdot 0\)</span>.</p>
 <p>Assume <span class="arithmatex">\(S(a)\cdot x=(a\cdot x)+x\)</span>, consider:</p>
 <div class="arithmatex">\[
 \begin{aligned}
@@ -1158,7 +1158,7 @@ S(a)\cdot S(x)&amp;== S(a)+(S(a)\cdot x) &amp;&amp; \text{(by definition)}\\
 <p>Hence, the lemma is proved.
 </div></p>
 <p>Now, we can prove that multiplication is commutative using induction.</p>
-<p>Base case: <span class="arithmatex">\(a\cdot0=0=0\cdot a\)</span>.</p>
+<p>Base case: <span class="arithmatex">\(a\cdot0=0=0\cdot a\)</span> (by lemma 1).</p>
 <p>Assume <span class="arithmatex">\(a\cdot x=x\cdot a\)</span>,</p>
 <div class="arithmatex">\[
 \begin{aligned}
