@@ -95,6 +95,11 @@ nav:
       - Chapter 3: analysis/chapter3.md
       - Limits: analysis/limits.md
       - Integration: analysis/integration.md
+  - MATH 1090:
+      - MATH1090/index.md
+      - MATH1090/chapter1.md
+      - MATH1090/chapter2.md
+      - MATH1090/chapter3.md
 
 extra:
   social:
