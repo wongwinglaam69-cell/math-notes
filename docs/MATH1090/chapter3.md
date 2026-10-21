@@ -38,6 +38,7 @@ and likewise with the order reversed.
 
 **Exercise 3.2.1** Show that for all $n\in \mathbb{N}$, $0+n=n$.
 ??? note "Solution"
+    
     We shall prove this by induction.
 
     Let $P(n)$ be the predicate $0+n=n$.
@@ -70,6 +71,7 @@ a\cdot S(b)=a+(a\cdot b)
 $$
 
 This is well-defined again by the principle of induction.
+</div>
 
 **Exercise 3.2.2** Calculate $2\cdot 3$.
 ??? note "Solution"
@@ -85,7 +87,47 @@ This is well-defined again by the principle of induction.
     \end{aligned}
     $$
 
-**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative.
+**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. 
+??? note "Solution"
+
+First we show addition is commutative.
+
+**Lemma:** $S(a)+b=S(a+b)$.
+<div class="proof" markdown>
+
+We can prove this by induction.
+For the base case, $S(a)+0=S(a)=0+S(a)$, by exercise 3.2.1.
+
+Now assume $P(b)$ is true, we consider $P(S(b))$
+
+$$
+\begin{aligned}
+S(a)+S(b)&=S(S(a)+b) && \text{(by definition of addition)}\\
+&=S(S(a+b)) && \text{(by induction assumption)}\\
+&=S(a+S(b)) && \text{(by definition of addition)}
+\end{aligned}
+$$
+
+Hence $P(b)$ is true for all $b\in \mathbb{N}$
+</div>
+Then we shall prove the statement by induction,
+
+Let $P(b)$ be the predicate such that $a+b=b+a$, for $a,b\in \mathbb{N}$.
+
+When $b=0$, proved in exercise 3.2.1.
+
+Assume $P$ is true for $b$, then consider $S(b)$,
+
+$$
+\begin{aligned}
+a+S(b)&=S(a+b)\\
+&=S(b+a)&& \text{(by induction assumption)}\\
+&=S(b)+a && \text{(by lemma)}
+\end{aligned}
+$$
+
+Hence $P$ is proved, addition is commutative.
+
 
 
 
