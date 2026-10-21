@@ -32,6 +32,7 @@ $$
   a+S(b)=S(a+b)
 \end{cases}
 $$
+
 and likewise with the order reversed.
 </div>
 
