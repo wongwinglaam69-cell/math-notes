@@ -1114,15 +1114,59 @@ a+S(b)&amp;=S(a+b)\\
 <p>Now assume <span class="arithmatex">\((a+x)+c=a+(x+c)\)</span>, and consider <span class="arithmatex">\(S(x)\)</span>,</p>
 <div class="arithmatex">\[
 \begin{aligned}
-(a+S(x))+c&amp;=S(a+x)+c &amp;&amp; \text{{by definition}}\\
+(a+S(x))+c&amp;=S(a+x)+c &amp;&amp; \text{(by definition)}\\
 &amp;= c+S(a+x) &amp;&amp; \text{(by commutativity)}\\
-&amp;= S(c+a+x) &amp;&amp; \text{{by definition}}\\
+&amp;= S(c+a+x) &amp;&amp; \text{(by definition)}\\
 &amp;= S(a+x+c) &amp;&amp; \text{(by commutativity)}\\
 &amp;= a + S(x+c) &amp;&amp; \text{(by definition)}\\
 &amp;= a + (S(x)+c) &amp;&amp; \text{(refer to lemma in proof of commutativity)}
 \end{aligned}
 \]</div>
 <p>by induction, addition is associative.</p>
+</details>
+<details class="note">
+<summary>Solution (multiplication is commutative)</summary>
+<p><strong>Lemma 1.</strong> <span class="arithmatex">\(0\cdot a=0\)</span>.</p>
+<p><div class="proof" markdown>
+We shall do this by induction.</p>
+<p>Base case: <span class="arithmatex">\(0\cdot0=0\)</span> by definition.</p>
+<p>Assume <span class="arithmatex">\(0\cdot x=0\)</span>, then consider <span class="arithmatex">\(S(x)\)</span>,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+0\cdot S(x)&amp;=0+(0\cdot x) &amp;&amp; \text{(by definition)}\\
+&amp;= 0\cdot 0 &amp;&amp; \text{(induction assumption)}\\
+&amp;= 0\\
+\end{aligned}
+\]</div>
+<p>By induction, <span class="arithmatex">\(0\cdot a=0\)</span> for all <span class="arithmatex">\(a\in \mathbb{N}\)</span>
+</div></p>
+<p><strong>Lemma 2.</strong> $S(a)\cdot b=(a\cdot b)+b.</p>
+<p><div class="proof" markdown>
+We prove this by induction on <span class="arithmatex">\(b\)</span>.</p>
+<p>When <span class="arithmatex">\(b=0\)</span>, <span class="arithmatex">\(a\cdot0+0=0=S(a)\cdot 0\)</span>.</p>
+<p>Assume <span class="arithmatex">\(S(a)\cdot x=(a\cdot x)+x\)</span>, consider:</p>
+<p>$$
+S(a)\cdot S(x)&amp;== S(a)+(S(a)\cdot x) &amp;&amp; \text{(by definition)}\
+&amp;= S(a)+(a\cdot x)+x &amp;&amp; \text{(by induction assumption)}\
+&amp;= S(a)+x+(a\cdot x)\
+&amp;= S(x)+a+(a\cdot x) &amp;&amp; \text{(from commutativity of addition)}\
+&amp;= S(x)+(a\cdot S(x)) &amp;&amp; \text{(by definition)}\
+&amp;= (a\cdot S(x)) + S(x) &amp;&amp; \text{(since addition is commutative)}
+$$
+&lt;\div&gt;</p>
+<p>Hence, the lemma is proved.</p>
+<p>Now, we can prove that multiplication is commutative using induction.</p>
+<p>Base case: <span class="arithmatex">\(a\cdot0=0=0\cdot a\)</span>.</p>
+<p>Assume <span class="arithmatex">\(a\cdot x=x\cdot a\)</span>,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+a\cdot S(x) &amp;=a+(a\cdot x) &amp;&amp; \text{(by definition)}\\
+&amp;=a+(x\cdot a) &amp;&amp; \text{(induction assumption)} \\
+&amp;=(x\cdot a) + a &amp;&amp; \text{(addition is commutative)} \\
+&amp;=S(x)\cdot a &amp;&amp; \text{(lemma 2)}
+\end{aligned}
+\]</div>
+<p>Hence by induction, multiplication is commutative.</p>
 </details>
 
 
