@@ -59,6 +59,36 @@ and likewise with the order reversed.
 
     By the principle of induction, $P$ is true of all $n\in \mathbb{N}$.
 
+<div class="definition" markdown>
+As with addition, we define $\cdot$ recursively too:
+
+$$
+\begin{cases}
+a\cdot0-0\\
+a\cdot S(b)=a+(a\cdot b)
+\end{cases}
+$$
+
+This is well-defined again by the principle of induction.
+
+**Exercise 3.2.2** Calculate $2\cdot 3$.
+??? note "Solution"
+
+    $$
+    \begin{aligned}
+    2\cdot 3 &= S(S(0)) \cdot S(S(S(0))) \\
+    &= S(S(0)) + (S(S(0))\cdot S(S(0)))\\
+    &= S(S(0)) + S(S(0)) + S(S(0))\cdot S(0)\\
+    &=S(S(0)) + S(S(0)) + S(S(0)) + S(S(0))\cdot 0\\
+    &=S(S(0)) + S(S(0)) + S(S(0)) + 0\\
+    &=S(S(S(S(S(S(0))))))
+    \end{aligned}
+    $$
+
+**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative.
+
+
+
 
 
 
