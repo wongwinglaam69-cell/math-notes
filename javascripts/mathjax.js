@@ -4,7 +4,6 @@ window.MathJax = {
     displayMath: [["\\[", "\\]"], ["$$", "$$"]],
     processEscapes: true,
     processEnvironments: true,
-    packages: {'[+]': ['ams']} 
   },
   options: {
     ignoreHtmlClass: ".*|",
