@@ -14,7 +14,7 @@ tags:
 
 1. If $S(x)=S(y)$ for $x,y\in N$, then $x=y$ ($S$ is injective).
 2. For all $x \in N$, $S(x)\neq x$ .
-3. There is no $x\in N$ such that $S(x)=0.
+3. There is no $x\in N$ such that $S(x)=0$.
 4. <i>(Principle of Induction)</i> Suppose a predicate $P$ is true of $0$, and that whatever $P$ is true of $x$, it is also true of $S(x)$. Then $P$ is true for all $x\in N$.
 </div>
 
@@ -26,7 +26,7 @@ tags:
 <div class="definition" markdown>
 First, we define $+$:
 $$
-\begin{case}
+\begin{cases}
   a+0=a\\
   a+S(b)=S(a+b)
 \end{cases}
@@ -37,9 +37,13 @@ and likewise with the order reversed.
 **Exercise 3.2.1** Show that for all $n\in N$, $0+n=n$.
 ??? note "Solution"
     We shall prove this by induction.
+
     Let $P(n)$ be the predicate $0+n=n$.
+
     By defintion we have $a+0=a$, substitute $a=0$ we get $0+0=0$, hence $P(0)$ is true.
+
     Assume $P(x)$ is true, i.e. $0+x=x$,
+
     consider $P(S(x))$,
     $$
     \begin{equation*}
@@ -49,7 +53,9 @@ and likewise with the order reversed.
     \end{split}
     \end{equation*}
     $$
+
     Therefore $P$ is also true of $S(x)$.
+
     By the principle of induction, $P$ is true of all $n\in N$.
 
 
