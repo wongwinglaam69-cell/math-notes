@@ -88,7 +88,7 @@ This is well-defined again by the principle of induction.
     $$
 
 **Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. 
-??? note "Solution" 
+??? note "Solution (addition is commutative)" 
 
     First we show addition is commutative.
 
@@ -128,6 +128,32 @@ This is well-defined again by the principle of induction.
     $$
 
     Hence $P$ is proved, addition is commutative.
+
+??? note "Solution (addition is associative)"
+
+    Now we show addition is associative, i.e. $(a+b)+c=a+(b+c)$ for $a,b,c\in \mathbb{N}$.
+
+    We shall prove it by induction on $b$.
+
+    When $b=0$, $(a+0)+c=a+c=a+(0+c)$. Note that we have $a+0=a$ by definition and $0+c=c$ from exercise 3.2.1.
+
+    Now assume $(a+x)+c=a+(x+c)$, and consider $S(x)$,
+
+    $$
+    \begin{aligned}
+    (a+S(x))+c&=S(a+x)+c\\ && \text{{by definition}}
+    &= c+S(a+x)\\ && \text{(by commutativity)}
+    &= S(c+a+x)\\ && \text{{by definition}}
+    &= S(a+x+c)\\ && \text{(by commutativity)}
+    &= a + S(x+c)\\ && \text{(by definition)}
+    &= a + (S(x)+c)\\ && \text{(refer to lemma in proof of commutativity)}
+    \end{aligned}
+    $$
+
+    by induction, addition is associative.
+
+
+
 
 
 
