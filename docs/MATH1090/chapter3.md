@@ -141,9 +141,9 @@ This is well-defined again by the principle of induction.
 
     $$
     \begin{aligned}
-    (a+S(x))+c&=S(a+x)+c && \text{{by definition}}\\
+    (a+S(x))+c&=S(a+x)+c && \text{(by definition)}\\
     &= c+S(a+x) && \text{(by commutativity)}\\
-    &= S(c+a+x) && \text{{by definition}}\\
+    &= S(c+a+x) && \text{(by definition)}\\
     &= S(a+x+c) && \text{(by commutativity)}\\
     &= a + S(x+c) && \text{(by definition)}\\
     &= a + (S(x)+c) && \text{(refer to lemma in proof of commutativity)}
@@ -151,6 +151,67 @@ This is well-defined again by the principle of induction.
     $$
 
     by induction, addition is associative.
+
+??? note "Solution (multiplication is commutative)"
+
+    **Lemma 1.** $0\cdot a=0$.
+
+    <div class="proof" markdown>
+    We shall do this by induction.
+
+    Base case: $0\cdot0=0$ by definition.
+
+    Assume $0\cdot x=0$, then consider $S(x)$,
+
+    $$
+    \begin{aligned}
+    0\cdot S(x)&=0+(0\cdot x) && \text{(by definition)}\\
+    &= 0\cdot 0 && \text{(induction assumption)}\\
+    &= 0\\
+    \end{aligned}
+    $$
+
+    By induction, $0\cdot a=0$ for all $a\in \mathbb{N}$
+    </div>
+
+    **Lemma 2.** $S(a)\cdot b=(a\cdot b)+b.
+
+    <div class="proof" markdown>
+    We prove this by induction on $b$.
+
+    When $b=0$, $a\cdot0+0=0=S(a)\cdot 0$.
+
+    Assume $S(a)\cdot x=(a\cdot x)+x$, consider:
+
+    $$
+    S(a)\cdot S(x)&== S(a)+(S(a)\cdot x) && \text{(by definition)}\\
+    &= S(a)+(a\cdot x)+x && \text{(by induction assumption)}\\
+    &= S(a)+x+(a\cdot x)\\
+    &= S(x)+a+(a\cdot x) && \text{(from commutativity of addition)}\\
+    &= S(x)+(a\cdot S(x)) && \text{(by definition)}\\
+    &= (a\cdot S(x)) + S(x) && \text{(since addition is commutative)}
+    $$
+    <\div>
+
+    Hence, the lemma is proved.
+
+    Now, we can prove that multiplication is commutative using induction.
+
+    Base case: $a\cdot0=0=0\cdot a$.
+
+    Assume $a\cdot x=x\cdot a$,
+
+    $$
+    \begin{aligned}
+    a\cdot S(x) &=a+(a\cdot x) && \text{(by definition)}\\
+    &=a+(x\cdot a) && \text{(induction assumption)} \\
+    &=(x\cdot a) + a && \text{(addition is commutative)} \\
+    &=S(x)\cdot a && \text{(lemma 2)}
+    \end{aligned}
+    $$
+
+    Hence by induction, multiplication is commutative.
+
 
 
 
