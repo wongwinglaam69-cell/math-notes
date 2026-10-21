@@ -87,43 +87,46 @@ This is well-defined again by the principle of induction.
     \end{aligned}
     $$
 
-**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. ??? note "Solution" First we show addition is commutative.
+**Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. ??? note "Solution" 
 
-**Lemma:** $S(a)+b=S(a+b)$.
-<div class="proof" markdown>
+    First we show addition is commutative.
 
-We can prove this by induction.
-For the base case, $S(a)+0=S(a)=0+S(a)$, by exercise 3.2.1.
+    **Lemma:** $S(a)+b=S(a+b)$.
+    <div class="proof" markdown>
 
-Now assume $P(b)$ is true, we consider $P(S(b))$
+    We can prove this by induction.
 
-$$
-\begin{aligned}
-S(a)+S(b)&=S(S(a)+b) && \text{(by definition of addition)}\\
-&=S(S(a+b)) && \text{(by induction assumption)}\\
-&=S(a+S(b)) && \text{(by definition of addition)}
-\end{aligned}
-$$
+    For the base case, $S(a)+0=S(a)=0+S(a)$, by exercise 3.2.1.
 
-Hence $P(b)$ is true for all $b\in \mathbb{N}$
-</div>
-Then we shall prove the statement by induction,
+    Now assume $P(b)$ is true, we consider $P(S(b))$
 
-Let $P(b)$ be the predicate such that $a+b=b+a$, for $a,b\in \mathbb{N}$.
+    $$
+    \begin{aligned}
+    S(a)+S(b)&=S(S(a)+b) && \text{(by definition of addition)}\\
+    &=S(S(a+b)) && \text{(by induction assumption)}\\
+    &=S(a+S(b)) && \text{(by definition of addition)}
+    \end{aligned}
+    $$
 
-When $b=0$, proved in exercise 3.2.1.
+    Hence $P(b)$ is true for all $b\in \mathbb{N}$
+    </div>
+    Then we shall prove the statement by induction,
 
-Assume $P$ is true for $b$, then consider $S(b)$,
+    Let $P(b)$ be the predicate such that $a+b=b+a$, for $a,b\in \mathbb{N}$.
 
-$$
-\begin{aligned}
-a+S(b)&=S(a+b)\\
-&=S(b+a)&& \text{(by induction assumption)}\\
-&=S(b)+a && \text{(by lemma)}
-\end{aligned}
-$$
+    When $b=0$, proved in exercise 3.2.1.
 
-Hence $P$ is proved, addition is commutative.
+    Assume $P$ is true for $b$, then consider $S(b)$,
+
+    $$
+    \begin{aligned}
+    a+S(b)&=S(a+b)\\
+    &=S(b+a)&& \text{(by induction assumption)}\\
+    &=S(b)+a && \text{(by lemma)}
+    \end{aligned}
+    $$
+
+    Hence $P$ is proved, addition is commutative.
 
 
 
