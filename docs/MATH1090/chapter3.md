@@ -174,7 +174,7 @@ This is well-defined again by the principle of induction.
     By induction, $0\cdot a=0$ for all $a\in \mathbb{N}$
     </div>
 
-    **Lemma 2.** $S(a)\cdot b=(a\cdot b)+b.
+    **Lemma 2.** $S(a)\cdot b=(a\cdot b)+b$.
 
     <div class="proof" markdown>
     We prove this by induction on $b$.
@@ -184,16 +184,20 @@ This is well-defined again by the principle of induction.
     Assume $S(a)\cdot x=(a\cdot x)+x$, consider:
 
     $$
+    \begin{aligned}
     S(a)\cdot S(x)&== S(a)+(S(a)\cdot x) && \text{(by definition)}\\
     &= S(a)+(a\cdot x)+x && \text{(by induction assumption)}\\
     &= S(a)+x+(a\cdot x)\\
     &= S(x)+a+(a\cdot x) && \text{(from commutativity of addition)}\\
     &= S(x)+(a\cdot S(x)) && \text{(by definition)}\\
     &= (a\cdot S(x)) + S(x) && \text{(since addition is commutative)}
+    \end{aligned}
     $$
-    <\div>
 
     Hence, the lemma is proved.
+    </div>
+
+
 
     Now, we can prove that multiplication is commutative using induction.
 
