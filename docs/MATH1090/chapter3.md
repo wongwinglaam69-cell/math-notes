@@ -179,7 +179,7 @@ This is well-defined again by the principle of induction.
     <div class="proof" markdown>
     We prove this by induction on $b$.
 
-    When $b=0$, $a\cdot0+0=0=S(a)\cdot 0$.
+    When $b=0$, $(a\cdot0)+0=0+0=0=S(a)\cdot 0$.
 
     Assume $S(a)\cdot x=(a\cdot x)+x$, consider:
 
@@ -201,7 +201,7 @@ This is well-defined again by the principle of induction.
 
     Now, we can prove that multiplication is commutative using induction.
 
-    Base case: $a\cdot0=0=0\cdot a$.
+    Base case: $a\cdot0=0=0\cdot a$ (by lemma 1).
 
     Assume $a\cdot x=x\cdot a$,
 
