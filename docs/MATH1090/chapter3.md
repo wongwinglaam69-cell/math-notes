@@ -141,12 +141,12 @@ This is well-defined again by the principle of induction.
 
     $$
     \begin{aligned}
-    (a+S(x))+c&=S(a+x)+c\\ && \text{{by definition}}
-    &= c+S(a+x)\\ && \text{(by commutativity)}
-    &= S(c+a+x)\\ && \text{{by definition}}
-    &= S(a+x+c)\\ && \text{(by commutativity)}
-    &= a + S(x+c)\\ && \text{(by definition)}
-    &= a + (S(x)+c)\\ && \text{(refer to lemma in proof of commutativity)}
+    (a+S(x))+c&=S(a+x)+c && \text{{by definition}}\\
+    &= c+S(a+x) && \text{(by commutativity)}\\
+    &= S(c+a+x) && \text{{by definition}}\\
+    &= S(a+x+c) && \text{(by commutativity)}\\
+    &= a + S(x+c) && \text{(by definition)}\\
+    &= a + (S(x)+c) && \text{(refer to lemma in proof of commutativity)}
     \end{aligned}
     $$
 
