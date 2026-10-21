@@ -12,10 +12,10 @@ tags:
 <div class="definition" markdown>
  We say the triple data of $(N, 0, S)$ or just $N$ for short is a <u>model of the natural numbers</u> if:
 
-1. If $S(x)=S(y)$ for $x,y\in N$, then $x=y$ ($S$ is injective).
-2. For all $x \in N$, $S(x)\neq x$ .
-3. There is no $x\in N$ such that $S(x)=0$.
-4. <i>(Principle of Induction)</i> Suppose a predicate $P$ is true of $0$, and that whatever $P$ is true of $x$, it is also true of $S(x)$. Then $P$ is true for all $x\in N$.
+1. If $S(x)=S(y)$ for $x,y\in \mathbb{N}$, then $x=y$ ($S$ is injective).
+2. For all $x \in \mathbb{N}$, $S(x)\neq x$ .
+3. There is no $x\in \mathbb{N}$ such that $S(x)=0$.
+4. <i>(Principle of Induction)</i> Suppose a predicate $P$ is true of $0$, and that whatever $P$ is true of $x$, it is also true of $S(x)$. Then $P$ is true for all $x\in \mathbb{N}$.
 </div>
 
 **Exercise 3.1.1** Show that the set $\{0,1,2\}$ with $S(0)=1, S(1)=2, S(2)=0$ <u>does not </u> satisfy all Peano axioms. Which axioms fail?
@@ -24,7 +24,7 @@ tags:
 
 ## 2. Defining arithmetic operations: $+$ and $\cdot$
 <div class="definition" markdown>
-First, we define $+$:
+First, we define $+$ : 
 
 $$
 \begin{cases}
@@ -36,7 +36,7 @@ $$
 and likewise with the order reversed.
 </div>
 
-**Exercise 3.2.1** Show that for all $n\in N$, $0+n=n$.
+**Exercise 3.2.1** Show that for all $n\in \mathbb{N}$, $0+n=n$.
 ??? note "Solution"
     We shall prove this by induction.
 
@@ -57,7 +57,7 @@ and likewise with the order reversed.
 
     Therefore $P$ is also true of $S(x)$.
 
-    By the principle of induction, $P$ is true of all $n\in N$.
+    By the principle of induction, $P$ is true of all $n\in \mathbb{N}$.
 
 
 
