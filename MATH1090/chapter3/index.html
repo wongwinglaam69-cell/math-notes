@@ -1077,7 +1077,7 @@ a\cdot S(b)=a+(a\cdot b)
 </details>
 <p><strong>Exercise 3.2.3</strong> Show from the definitions that addition and multiplication are commutative and associative. </p>
 <details class="note">
-<summary>Solution</summary>
+<summary>Solution (addition is commutative)</summary>
 <p>First we show addition is commutative.</p>
 <p><strong>Lemma:</strong> <span class="arithmatex">\(S(a)+b=S(a+b)\)</span>.
 <div class="proof" markdown></p>
@@ -1105,6 +1105,24 @@ a+S(b)&amp;=S(a+b)\\
 \end{aligned}
 \]</div>
 <p>Hence <span class="arithmatex">\(P\)</span> is proved, addition is commutative.</p>
+</details>
+<details class="note">
+<summary>Solution (addition is associative)</summary>
+<p>Now we show addition is associative, i.e. <span class="arithmatex">\((a+b)+c=a+(b+c)\)</span> for <span class="arithmatex">\(a,b,c\in \mathbb{N}\)</span>.</p>
+<p>We shall prove it by induction on <span class="arithmatex">\(b\)</span>.</p>
+<p>When <span class="arithmatex">\(b=0\)</span>, <span class="arithmatex">\((a+0)+c=a+c=a+(0+c)\)</span>. Note that we have <span class="arithmatex">\(a+0=a\)</span> by definition and <span class="arithmatex">\(0+c=c\)</span> from exercise 3.2.1.</p>
+<p>Now assume <span class="arithmatex">\((a+x)+c=a+(x+c)\)</span>, and consider <span class="arithmatex">\(S(x)\)</span>,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+(a+S(x))+c&amp;=S(a+x)+c\\ &amp;&amp; \text{{by definition}}
+&amp;= c+S(a+x)\\ &amp;&amp; \text{(by commutativity)}
+&amp;= S(c+a+x)\\ &amp;&amp; \text{{by definition}}
+&amp;= S(a+x+c)\\ &amp;&amp; \text{(by commutativity)}
+&amp;= a + S(x+c)\\ &amp;&amp; \text{(by definition)}
+&amp;= a + (S(x)+c)\\ &amp;&amp; \text{(refer to lemma in proof of commutativity)}
+\end{aligned}
+\]</div>
+<p>by induction, addition is associative.</p>
 </details>
 
 
