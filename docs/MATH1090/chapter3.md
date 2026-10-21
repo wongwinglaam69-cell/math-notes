@@ -65,7 +65,7 @@ As with addition, we define $\cdot$ recursively too:
 
 $$
 \begin{cases}
-a\cdot0-0\\
+a\cdot0=0\\
 a\cdot S(b)=a+(a\cdot b)
 \end{cases}
 $$
@@ -89,7 +89,6 @@ This is well-defined again by the principle of induction.
 
 **Exercise 3.2.3** Show from the definitions that addition and multiplication are commutative and associative. 
 ??? note "Solution"
-
 First we show addition is commutative.
 
 **Lemma:** $S(a)+b=S(a+b)$.
