@@ -1060,6 +1060,7 @@ a\cdot S(b)=a+(a\cdot b)
 \end{cases}
 \]</div>
 <p>This is well-defined again by the principle of induction.</p>
+</div>
 <p><strong>Exercise 3.2.2</strong> Calculate <span class="arithmatex">\(2\cdot 3\)</span>.</p>
 <details class="note">
 <summary>Solution</summary>
@@ -1074,8 +1075,37 @@ a\cdot S(b)=a+(a\cdot b)
 \end{aligned}
 \]</div>
 </details>
-<p><strong>Exercise 3.2.3</strong> Show from the definitions that addition and multiplication are commutative and associative.</p>
+<p><strong>Exercise 3.2.3</strong> Show from the definitions that addition and multiplication are commutative and associative. </p>
+<details class="note">
+<summary>Solution</summary>
+</details>
+<p>First we show addition is commutative.</p>
+<p><strong>Lemma:</strong> <span class="arithmatex">\(S(a)+b=S(a+b)\)</span>.</p>
+<div class="proof">
+<p>We can prove this by induction.
+For the base case, <span class="arithmatex">\(S(a)+0=S(a)=0+S(a)\)</span>, by exercise 3.2.1.</p>
+<p>Now assume <span class="arithmatex">\(P(b)\)</span> is true, we consider <span class="arithmatex">\(P(S(b))\)</span></p>
+<div class="arithmatex">\[
+\begin{aligned}
+S(a)+S(b)&amp;=S(S(a)+b) &amp;&amp; \text{(by definition of addition)}\\
+&amp;=S(S(a+b)) &amp;&amp; \text{(by induction assumption)}\\
+&amp;=S(a+S(b)) &amp;&amp; \text{(by definition of addition)}
+\end{aligned}
+\]</div>
+<p>Hence <span class="arithmatex">\(P(b)\)</span> is true for all <span class="arithmatex">\(b\in \mathbb{N}\)</span></p>
 </div>
+<p>Then we shall prove the statement by induction,</p>
+<p>Let <span class="arithmatex">\(P(b)\)</span> be the predicate such that <span class="arithmatex">\(a+b=b+a\)</span>, for <span class="arithmatex">\(a,b\in \mathbb{N}\)</span>.</p>
+<p>When <span class="arithmatex">\(b=0\)</span>, proved in exercise 3.2.1.</p>
+<p>Assume <span class="arithmatex">\(P\)</span> is true for <span class="arithmatex">\(b\)</span>, then consider <span class="arithmatex">\(S(b)\)</span>,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+a+S(b)&amp;=S(a+b)\\
+&amp;=S(b+a)&amp;&amp; \text{(by induction assumption)}\\
+&amp;=S(b)+a &amp;&amp; \text{(by lemma)}
+\end{aligned}
+\]</div>
+<p>Hence <span class="arithmatex">\(P\)</span> is proved, addition is commutative.</p>
 
 
 
