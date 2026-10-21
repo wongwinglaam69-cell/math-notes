@@ -1140,21 +1140,23 @@ We shall do this by induction.</p>
 \]</div>
 <p>By induction, <span class="arithmatex">\(0\cdot a=0\)</span> for all <span class="arithmatex">\(a\in \mathbb{N}\)</span>
 </div></p>
-<p><strong>Lemma 2.</strong> $S(a)\cdot b=(a\cdot b)+b.</p>
+<p><strong>Lemma 2.</strong> <span class="arithmatex">\(S(a)\cdot b=(a\cdot b)+b\)</span>.</p>
 <p><div class="proof" markdown>
 We prove this by induction on <span class="arithmatex">\(b\)</span>.</p>
 <p>When <span class="arithmatex">\(b=0\)</span>, <span class="arithmatex">\(a\cdot0+0=0=S(a)\cdot 0\)</span>.</p>
 <p>Assume <span class="arithmatex">\(S(a)\cdot x=(a\cdot x)+x\)</span>, consider:</p>
-<p>$$
-S(a)\cdot S(x)&amp;== S(a)+(S(a)\cdot x) &amp;&amp; \text{(by definition)}\
-&amp;= S(a)+(a\cdot x)+x &amp;&amp; \text{(by induction assumption)}\
-&amp;= S(a)+x+(a\cdot x)\
-&amp;= S(x)+a+(a\cdot x) &amp;&amp; \text{(from commutativity of addition)}\
-&amp;= S(x)+(a\cdot S(x)) &amp;&amp; \text{(by definition)}\
+<div class="arithmatex">\[
+\begin{aligned}
+S(a)\cdot S(x)&amp;== S(a)+(S(a)\cdot x) &amp;&amp; \text{(by definition)}\\
+&amp;= S(a)+(a\cdot x)+x &amp;&amp; \text{(by induction assumption)}\\
+&amp;= S(a)+x+(a\cdot x)\\
+&amp;= S(x)+a+(a\cdot x) &amp;&amp; \text{(from commutativity of addition)}\\
+&amp;= S(x)+(a\cdot S(x)) &amp;&amp; \text{(by definition)}\\
 &amp;= (a\cdot S(x)) + S(x) &amp;&amp; \text{(since addition is commutative)}
-$$
-&lt;\div&gt;</p>
-<p>Hence, the lemma is proved.</p>
+\end{aligned}
+\]</div>
+<p>Hence, the lemma is proved.
+</div></p>
 <p>Now, we can prove that multiplication is commutative using induction.</p>
 <p>Base case: <span class="arithmatex">\(a\cdot0=0=0\cdot a\)</span>.</p>
 <p>Assume <span class="arithmatex">\(a\cdot x=x\cdot a\)</span>,</p>
