@@ -1025,13 +1025,13 @@
 </details>
 <h2 id="2-defining-arithmetic-operations-and-cdot">2. Defining arithmetic operations: <span class="arithmatex">\(+\)</span> and <span class="arithmatex">\(\cdot\)</span><a class="headerlink" href="#2-defining-arithmetic-operations-and-cdot" title="Permanent link">&para;</a></h2>
 <div class="definition">
-<p>First, we define <span class="arithmatex">\(+\)</span>:
-$
+<p>First, we define <span class="arithmatex">\(+\)</span>:</p>
+<p>$$
 \begin{cases}
   a+0=a\
   a+S(b)=S(a+b)
 \end{cases}
-$
+$$
 and likewise with the order reversed.</p>
 </div>
 <p><strong>Exercise 3.2.1</strong> Show that for all <span class="arithmatex">\(n\in N\)</span>, <span class="arithmatex">\(0+n=n\)</span>.</p>
@@ -1039,17 +1039,15 @@ and likewise with the order reversed.</p>
 <summary>Solution</summary>
 <p>We shall prove this by induction.</p>
 <p>Let <span class="arithmatex">\(P(n)\)</span> be the predicate <span class="arithmatex">\(0+n=n\)</span>.</p>
-<p>By defintion we have <span class="arithmatex">\(a+0=a\)</span>, substitute <span class="arithmatex">\(a=0\)</span> we get <span class="arithmatex">\(0+0=0\)</span>, hence <span class="arithmatex">\(P(0)\)</span> is true.</p>
+<p>By defintion we have <span class="arithmatex">\(a+0=a\)</span>, substitute <span class="arithmatex">\(a=0\)</span>, we get <span class="arithmatex">\(0+0=0\)</span>, hence <span class="arithmatex">\(P(0)\)</span> is true.</p>
 <p>Assume <span class="arithmatex">\(P(x)\)</span> is true, i.e. <span class="arithmatex">\(0+x=x\)</span>,</p>
 <p>consider <span class="arithmatex">\(P(S(x))\)</span>,</p>
-<p>$
-\begin{equation*}
-\begin{split}
-0+S(x)&amp;=S(0+x)\text{\hspace{2cm}(by definition)}\
-&amp;=S(x)\text{\hspace{2cm}(by induction assumption)}
-\end{split}
-\end{equation*}
-$</p>
+<div class="arithmatex">\[
+\begin{aligned}
+0+S(x) &amp;= S(0+x) &amp;&amp; \text{(by definition)} \\
+&amp;= S(x) &amp;&amp; \text{(by induction assumption)}
+\end{aligned}
+\]</div>
 <p>Therefore <span class="arithmatex">\(P\)</span> is also true of <span class="arithmatex">\(S(x)\)</span>.</p>
 <p>By the principle of induction, <span class="arithmatex">\(P\)</span> is true of all <span class="arithmatex">\(n\in N\)</span>.</p>
 </details>
