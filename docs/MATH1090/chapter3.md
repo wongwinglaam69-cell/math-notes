@@ -25,12 +25,13 @@ tags:
 ## 2. Defining arithmetic operations: $+$ and $\cdot$
 <div class="definition" markdown>
 First, we define $+$:
-$
+
+$$
 \begin{cases}
   a+0=a\\
   a+S(b)=S(a+b)
 \end{cases}
-$
+$$
 and likewise with the order reversed.
 </div>
 
@@ -40,20 +41,18 @@ and likewise with the order reversed.
 
     Let $P(n)$ be the predicate $0+n=n$.
 
-    By defintion we have $a+0=a$, substitute $a=0$ we get $0+0=0$, hence $P(0)$ is true.
+    By defintion we have $a+0=a$, substitute $a=0$, we get $0+0=0$, hence $P(0)$ is true.
 
     Assume $P(x)$ is true, i.e. $0+x=x$,
 
     consider $P(S(x))$,
 
-    $
-    \begin{equation*}
-    \begin{split}
-    0+S(x)&=S(0+x)\text{\hspace{2cm}(by definition)}\\
-    &=S(x)\text{\hspace{2cm}(by induction assumption)}
-    \end{split}
-    \end{equation*}
-    $
+    $$
+    \begin{aligned}
+    0+S(x) &= S(0+x) && \text{(by definition)} \\
+    &= S(x) && \text{(by induction assumption)}
+    \end{aligned}
+    $$
 
     Therefore $P$ is also true of $S(x)$.
 
