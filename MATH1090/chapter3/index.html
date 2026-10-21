@@ -27,7 +27,7 @@
     
     
       
-        <title>The integers - My Mathematics Notes</title>
+        <title>Chapter 3 The integers - My Mathematics Notes</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The integers
+              Chapter 3 The integers
             
           </span>
         </div>
@@ -840,7 +840,7 @@
   <span class="md-ellipsis">
     
   
-    The integers
+    Chapter 3 The integers
   
 
     
@@ -858,7 +858,7 @@
   <span class="md-ellipsis">
     
   
-    The integers
+    Chapter 3 The integers
   
 
     
@@ -895,32 +895,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-fundamental-theorem-of-calculus" class="md-nav__link">
+  <a href="#2-defining-arithmetic-operations-and-cdot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Fundamental Theorem of Calculus
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Techniques
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
+        2. Defining arithmetic operations: \(+\) and \(\cdot\)
       
     </span>
   </a>
@@ -981,32 +959,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-fundamental-theorem-of-calculus" class="md-nav__link">
+  <a href="#2-defining-arithmetic-operations-and-cdot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Fundamental Theorem of Calculus
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Techniques
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
+        2. Defining arithmetic operations: \(+\) and \(\cdot\)
       
     </span>
   </a>
@@ -1061,67 +1017,42 @@
 <li>There is no <span class="arithmatex">\(x\in N\)</span> such that $S(x)=0.</li>
 <li><i>(Principle of Induction)</i> Suppose a predicate <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(0\)</span>, and that whatever <span class="arithmatex">\(P\)</span> is true of <span class="arithmatex">\(x\)</span>, it is also true of <span class="arithmatex">\(S(x)\)</span>. Then <span class="arithmatex">\(P\)</span> is true for all <span class="arithmatex">\(x\in N\)</span>.</li>
 </ol>
+</div>
 <p><strong>Exercise 3.1.1</strong> Show that the set <span class="arithmatex">\(\{0,1,2\}\)</span> with <span class="arithmatex">\(S(0)=1, S(1)=2, S(2)=0\)</span> <u>does not </u> satisfy all Peano axioms. Which axioms fail?</p>
 <details class="note">
 <summary>Solution</summary>
 <p>The third axiom failed, there shouldn't be any <span class="arithmatex">\(S(x)=0\)</span> but now we have <span class="arithmatex">\(S(2)=0\)</span>, contradiction.</p>
 </details>
-<p>Upper and lower sums:</p>
-<div class="arithmatex">\[
-U(f, P) = \sum_{i=1}^n M_i \Delta x_i, \qquad
-L(f, P) = \sum_{i=1}^n m_i \Delta x_i
-\]</div>
-<p>where <span class="arithmatex">\(M_i = \sup_{[x_{i-1}, x_i]} f\)</span> and <span class="arithmatex">\(m_i = \inf_{[x_{i-1}, x_i]} f\)</span>.</p>
-<p><span class="arithmatex">\(f\)</span> is <strong>Riemann integrable</strong> if <span class="arithmatex">\(\sup_P L(f, P) = \inf_P U(f, P)\)</span>; call
-this common value <span class="arithmatex">\(\int_a^b f\)</span>.</p>
-<h2 id="2-fundamental-theorem-of-calculus">2. Fundamental Theorem of Calculus<a class="headerlink" href="#2-fundamental-theorem-of-calculus" title="Permanent link">&para;</a></h2>
-<div class="theorem">
-<p><strong>FTC, Part I.</strong> If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a,b]\)</span> and
-<span class="arithmatex">\(F(x) = \int_a^x f(t)\, dt\)</span>, then <span class="arithmatex">\(F\)</span> is differentiable on <span class="arithmatex">\((a,b)\)</span> and</p>
-<div class="arithmatex">\[
-F'(x) = f(x).
-\]</div>
+<h2 id="2-defining-arithmetic-operations-and-cdot">2. Defining arithmetic operations: <span class="arithmatex">\(+\)</span> and <span class="arithmatex">\(\cdot\)</span><a class="headerlink" href="#2-defining-arithmetic-operations-and-cdot" title="Permanent link">&para;</a></h2>
+<div class="definition">
+<p>First, we define <span class="arithmatex">\(+\)</span>:
+$$
+\begin{case}
+  a+0=a\
+  a+S(b)=S(a+b)
+\end{cases}
+$$
+and likewise with the order reversed.</p>
 </div>
-<div class="theorem">
-<p><strong>FTC, Part II.</strong> If <span class="arithmatex">\(f\)</span> is integrable and <span class="arithmatex">\(F\)</span> is any antiderivative
-of <span class="arithmatex">\(f\)</span>, then</p>
-<div class="arithmatex">\[
-\int_a^b f(x)\, dx = F(b) - F(a).
-\]</div>
-</div>
-<h2 id="3-techniques">3. Techniques<a class="headerlink" href="#3-techniques" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Technique</th>
-<th>When to use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Substitution</td>
-<td>Composite integrands</td>
-</tr>
-<tr>
-<td>Integration by parts</td>
-<td>Products, <span class="arithmatex">\(\int u \, dv = uv - \int v \, du\)</span></td>
-</tr>
-<tr>
-<td>Partial fractions</td>
-<td>Rational functions</td>
-</tr>
-<tr>
-<td>Trigonometric substitution</td>
-<td><span class="arithmatex">\(\sqrt{a^2 - x^2}\)</span>, etc.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Compute <span class="arithmatex">\(\int_0^1 x^2 \, dx\)</span> directly from the definition.</li>
-<li>Evaluate <span class="arithmatex">\(\int_0^{\pi/2} \sin^2 x \, dx\)</span> using <span class="arithmatex">\(\sin^2 x = \frac{1 - \cos 2x}{2}\)</span>.</li>
-</ol>
-</div>
+<p><strong>Exercise 3.2.1</strong> Show that for all <span class="arithmatex">\(n\in N\)</span>, <span class="arithmatex">\(0+n=n\)</span>.</p>
+<details class="note">
+<summary>Solution</summary>
+<p>We shall prove this by induction.
+Let <span class="arithmatex">\(P(n)\)</span> be the predicate <span class="arithmatex">\(0+n=n\)</span>.
+By defintion we have <span class="arithmatex">\(a+0=a\)</span>, substitute <span class="arithmatex">\(a=0\)</span> we get <span class="arithmatex">\(0+0=0\)</span>, hence <span class="arithmatex">\(P(0)\)</span> is true.
+Assume <span class="arithmatex">\(P(x)\)</span> is true, i.e. <span class="arithmatex">\(0+x=x\)</span>,
+consider <span class="arithmatex">\(P(S(x))\)</span>,
+$$
+\begin{equation*}
+\begin{split}
+0+S(x)&amp;=S(0+x)\text{\hspace{2cm}(by definition)}\
+&amp;=S(x)\text{\hspace{2cm}(by induction assumption)}
+\end{split}
+\end{equation*}
+$$
+Therefore <span class="arithmatex">\(P\)</span> is also true of <span class="arithmatex">\(S(x)\)</span>.
+By the principle of induction, <span class="arithmatex">\(P\)</span> is true of all <span class="arithmatex">\(n\in N\)</span>.</p>
+</details>
 
 
 
